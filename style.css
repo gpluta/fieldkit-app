@@ -43,7 +43,9 @@ main.wide { max-width: 860px; }
 .hero-sub { margin: 10px auto 0; max-width: 480px; color: rgba(255, 255, 255, 0.85); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 24px; }
 .badge, .button { border-radius: 999px; padding: 10px 20px; font-size: 16px; font-weight: 600; }
-.badge { background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.35); }
+/* A dark, mostly opaque pill so the white text stays readable over the bright sunset glow. */
+.badge { background: rgba(10, 13, 28, 0.72); border: 1px solid rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .button { background: #ffa552; color: #1d1d1f; text-decoration: none; }
 .tools { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
 .tools a { background: var(--card); border-radius: 16px; padding: 14px 18px; color: var(--text); text-decoration: none; }
